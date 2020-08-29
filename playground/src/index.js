@@ -3,10 +3,31 @@ import ReactDOM from "react-dom"
 import faker from "faker"
 import CommentDetail from "./CommentDetail"
 import ApprovalCard from "./ApprovalCard"
+import Message from "./Message"
+import Segment from "./Segment"
 
 const App = () => {
   return (
     <div className="ui container comments">
+      <Segment>
+        <div className="ui icon header">
+          <i className="pdf file outline icon"></i>
+        </div>
+        <div className="ui primary button">
+          <h4 className="ui header">For Your Info</h4>
+        </div>
+      </Segment>
+
+      <Segment>
+        <h4 className="ui header">For Your Info</h4>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur iusto vel suscipit labore est sunt expedita modi facilis tempore rem.
+        </p>
+      </Segment>
+
+      <Message header="Attention" text="We just updated privacy policy !!!!"></Message>
+
       <ApprovalCard>
         <div>
           <h1>Warning</h1>
